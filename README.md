@@ -16,13 +16,13 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Deploy to cluster
-      uses: mjamaah/KubeApps@v1.28.4
+      uses: Madfoat/KubeCommands@v1.28.4
       with:
         kube_config: ${{ secrets.kube_config }}
         action: kubectl
         command: set image --record deployment/<my-deploy> <my-container>=<my-image>:<new-tag>
     - name: Verify deployment
-      uses: mjamaah/KubeApps@v1.28.4
+      uses: Madfoat/KubeCommands@v1.28.4
       with:
         kube_config: ${{ secrets.kube_config }}
         action: kubectl
@@ -43,7 +43,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Deploy to cluster
-      uses: mjamaah/KubeApps@v1.28.4
+      uses: Madfoat/KubeCommands@v1.28.4
       with:
         kube_config: ${{ secrets.kube_config }}
         action: helm

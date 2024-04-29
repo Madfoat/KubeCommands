@@ -1,5 +1,4 @@
 name: Continuous Integration
-
 on:
   push:
     paths:
@@ -7,18 +6,16 @@ on:
       - entrypoint.sh
     branches:
       - master
-
 jobs:
   push-to-docker:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v4
     - uses: elgohr/Publish-Docker-Github-Action@v5
       name: Publish to Docker
       with:
-        name: mjamaah/kubeapps
-        username: ${{ secrets.docker_username }}
-        password: ${{ secrets.docker_password }}
+        name: madfoat/kubecommands
+        username: ${{ secrets.DH_UN_C }}
+        password: ${{ secrets.DH_PS_C }}
         tags: latest,1.28.4
         cache: true

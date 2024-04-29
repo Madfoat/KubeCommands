@@ -57,8 +57,8 @@ ENV APP_VERSION="1.28.4" \
 
 LABEL version="1.28.4"
 LABEL name="kubeapps"
-LABEL repository="https://github.com/mjamaah/KubeApps"
-LABEL homepage="https://github.com/mjamaah/KubeApps"
+LABEL repository="https://github.com/Madfoat/KubeCommands"
+LABEL homepage="https://github.com/Madfoat/KubeCommands"
 
 LABEL com.github.actions.name="Kubernetes CLI (Kubectl and helm)"
 LABEL com.github.actions.description="This action provides kubectl v1.28.4 and helm for Github Actions"
