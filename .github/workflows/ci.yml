@@ -5,7 +5,7 @@ on:
       - Dockerfile
       - entrypoint.sh
     branches:
-      - master
+      - development
 jobs:
   push-to-docker:
     runs-on: ubuntu-latest
