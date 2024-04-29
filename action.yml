@@ -1,6 +1,6 @@
 name: KubeCommands v1.28.4
 description: Use bitnami's 1.28.4 kubectl and Helm with your Github actions
-author: MadfoatCom
+author: Madfoat
 branding:
   icon: terminal
   color: gray-dark
